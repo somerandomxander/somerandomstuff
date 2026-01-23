@@ -1,8 +1,8 @@
 # Path changes
-# export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Run leenfetch at startup
-# leenfetch
+leenfetch
 
 # Set the default directory
 cd $HOME/Downloads
@@ -11,24 +11,26 @@ cd $HOME/Downloads
 ulimit -c 0
 
 # Init zoxide
-# eval "$(zoxide init zsh)"
+eval "$(zoxide init zsh)"
 
 # Init mcfly
-# eval "$(mcfly init zsh)"
+eval "$(mcfly init zsh)"
 
 # Init autosuggestions and syntax highlighting
-# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Aliases
+alias sudo="sudo-rs"
 alias ls="lla"
 alias cd="z"
 alias grep="rg --color=auto"
 alias cat="syncat"
+alias cp="xcp"
 alias top="btm"
 alias home="cd $HOME/Downloads"
-alias sudoedit="sudo EDITOR=vim visudo"
-alias zshedit="fresh ~/.zshrc"
+alias sudoedit="sudo EDITOR=hx visudo"
+alias zshedit="hx ~/.zshrc"
 alias zshsrc="source ~/.zshrc"
 alias yt-dlp-audio="yt-dlp -x --audio-format mp3 --remote-components ejs:github"
 alias cls="clear"
@@ -50,3 +52,88 @@ alias touch="bonk"
 alias mkdir="bonk"
 alias rename="rnr"
 alias diff="delta"
+alias dd="caligula"
+
+# SCX
+alias scx="sudo scx_p2dq -s 10 -a --keep-running --deadline -f -y --atq-enabled true --dhq-enabled true --cpu-priority true --wakeup-llc-migrations --queued-wakeup --task-slice true --sched-mode performance --virt-llc-enabled true --latency-priority --wakeup-preemption --virt-llc=2 --relaxed-maps true -l 8 -i 1"
+
+# Uutils
+alias b2sum="uutils-coreutils b2sum"
+alias b3sum="uutils-coreutils b3sum"
+alias base32="uutils-coreutils base32"
+alias base64="uutils-coreutils base64"
+alias basename="uutils-coreutils basename"
+alias basenc="uutils-coreutils basenc"
+alias chcon="uutils-coreutils chcon"
+alias cksum="uutils-coreutils cksum"
+alias comm="uutils-coreutils comm"
+alias csplit="uutils-coreutils csplit"
+alias cut="uutils-coreutils cut"
+alias date="uutils-coreutils date"
+alias dir="uutils-coreutils dir"
+alias dircolors="uutils-coreutils dircolors"
+alias dirname="uutils-coreutils dirname"
+alias echo="uutils-coreutils echo"
+alias env="uutils-coreutils env"
+alias expand="uutils-coreutils expand"
+alias expr="uutils-coreutils expr"
+alias factor="uutils-coreutils factor"
+alias false="uutils-coreutils false"
+alias fmt="uutils-coreutils fmt"
+alias fold="uutils-coreutils fold"
+alias hashsum="uutils-coreutils hashsum"
+alias head="uutils-coreutils head"
+alias id="uutils-coreutils id"
+alias join="uutils-coreutils join"
+alias link="uutils-coreutils link"
+alias ln="uutils-coreutils ln"
+alias md5sum="uutils-coreutils md5sum"
+alias mktemp="uutils-coreutils mktemp"
+alias more="uutils-coreutils more"
+alias mv="uutils-coreutils mv"
+alias nl="uutils-coreutils nl"
+alias numfmt="uutils-coreutils numfmt"
+alias od="uutils-coreutils od"
+alias paste="uutils-coreutils paste"
+alias pr="uutils-coreutils pr"
+alias printenv="uutils-coreutils printenv"
+alias printf="uutils-coreutils printf"
+alias ptx="uutils-coreutils ptx"
+alias pwd="uutils-coreutils pwd"
+alias readlink="uutils-coreutils readlink"
+alias realpath="uutils-coreutils realpath"
+alias rm="uutils-coreutils rm"
+alias rmdir="uutils-coreutils rmdir"
+alias runcon="uutils-coreutils runcon"
+alias seq="uutils-coreutils seq"
+alias sha1sum="uutils-coreutils sha1sum"
+alias sha224sum="uutils-coreutils sha224sum"
+alias sha256sum="uutils-coreutils sha256sum"
+alias sha3-224sum="uutils-coreutils sha3-224sum"
+alias sha3-256sum="uutils-coreutils sha3-256sum"
+alias sha3-384sum="uutils-coreutils sha3-384sum"
+alias sha3-512sum="uutils-coreutils sha3-512sum"
+alias sha384sum="uutils-coreutils sha384sum"
+alias sha3sum="uutils-coreutils sha3sum"
+alias sha512sum="uutils-coreutils sha512sum"
+alias shake128sum="uutils-coreutils shake128sum"
+alias shake256sum="uutils-coreutils shake256sum"
+alias shred="uutils-coreutils shred"
+alias shuf="uutils-coreutils shuf"
+alias sleep="uutils-coreutils sleep"
+alias sort="uutils-coreutils sort"
+alias split="uutils-coreutils split"
+alias sum="uutils-coreutils sum"
+alias tac="uutils-coreutils tac"
+alias tee="uutils-coreutils tee"
+alias test="uutils-coreutils test"
+alias tr="uutils-coreutils tr"
+alias true="uutils-coreutils true"
+alias truncate="uutils-coreutils truncate"
+alias tsort="uutils-coreutils tsort"
+alias unexpand="uutils-coreutils unexpand"
+alias uniq="uutils-coreutils uniq"
+alias unlink="uutils-coreutils unlink"
+alias vdir="uutils-coreutils vdir"
+alias wc="uutils-coreutils wc"
+alias yes="uutils-coreutils yes"
