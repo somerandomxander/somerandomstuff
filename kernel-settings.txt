@@ -1,0 +1,24 @@
+As of 1/25/2026
+
+Kernel base: linux-next
+Compiler: LLVM 23 (LLVM=1)
+LTO type: Thin
+X86_NATIVE_CPU: Enabled
+NR CPUs: 64	
+Kernel compression type: LZ4
+Module compression type: ZSTD
+zsmalloc compression type: LZ4HC
+kCFI: Enabled
+THP: madvise
+Unused mobule symbol trimming: Enabled
+Experimental Btrfs features: Enabled
+Kernel crash dumps: Disabled
+hvemmap optimization: Enabled
+
+Kernel patches: ADIOS + BORE + le9uo
+Kernel scheduler: scx_p2dq
+Daemons: bpftune + ananicy-cpp (with CachyOS rules) + AdaptiveMM + irqbalance + nohang + preload + prelockd + uresourced + ksmtuned + profile-sync-daemon
+TCP congestion control: BBR
+TCP qdisc: cake_mq
+Framebuffer console: KMSCON (do the symlink method)
+Settings: cachyos-settings
