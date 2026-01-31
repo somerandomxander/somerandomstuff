@@ -1,0 +1,7 @@
+# List of kernel parameters I use
+
+nowatchdog quiet mitigations=off iommu=pt audit=0 vt.global_cursor_default=0
+init_on_alloc=0 tsc=reliable clocksource=tsc
+no_timer_check rcutree.kthread_prio=99 skew_tick=1 rcu_nocbs=0-31 rcupdate.rcu_normal=0
+rcutree.jiffies_till_first_fqs=0 rcutree.gp_init_delay=0
+rcutree.qhimark=15000 rcutree.qlowmark=3000 rcutree.rcu_resched_ns=5000000 pci=pcie_bus_perf
