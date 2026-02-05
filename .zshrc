@@ -16,6 +16,22 @@ eval "$(zoxide init zsh)"
 # Init mcfly
 eval "$(mcfly init zsh)"
 
+# Upgrade function
+upgrade() {
+    clear
+    echo "Ranking mirrors with Reflector..."
+    sudo reflector --country 'United States' --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+    echo "Beginning system update via topgrade..."
+    topgrade
+    echo "Updating font cache...'
+    fc-cache
+    echo "Clearing systemd journal..."
+    sudo journalctl --vacuum-size=1B
+    clear
+    echo "--- UPGRADE FUNCTION COMPLETE ---"
+    echo "because u suck bro"
+}
+
 # Aliases
 alias sudo="sudo-rs"
 alias ls="lla"
@@ -28,7 +44,7 @@ alias home="cd $HOME/Downloads"
 alias sudoedit="sudo EDITOR=fresh visudo"
 alias zshedit="fresh ~/.zshrc"
 alias zshsrc="source ~/.zshrc"
-alias yt-dlp-audio="yt-dlp -x --audio-format mp3 --remote-components ejs:github"
+alias yt-dlp-audio="yt-dlp -x --audio-format mp3"
 alias cls="clear"
 alias find="fd"
 alias ping="gping"
@@ -49,9 +65,7 @@ alias mkdir="bonk"
 alias rename="rnr"
 alias diff="delta"
 alias dd="caligula"
-
-# SCX
-alias scx="sudo scx_p2dq -s 10 -a --keep-running --deadline -f -y --atq-enabled true --dhq-enabled true --cpu-priority true --wakeup-llc-migrations --queued-wakeup --task-slice true --sched-mode performance --virt-llc-enabled true --latency-priority --wakeup-preemption --virt-llc=2 --relaxed-maps true -l 8 -i 1"
+alias fzf="tv"
 
 # Aliases for uutils
 
