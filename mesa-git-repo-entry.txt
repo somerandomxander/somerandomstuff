@@ -1,0 +1,3 @@
+[mesa-git]
+SigLevel = TrustAll
+Server = https://pkgbuild.com/~lcarlier/$repo/$arch
