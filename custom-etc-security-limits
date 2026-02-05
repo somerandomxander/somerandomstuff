@@ -1,0 +1,5 @@
+*  hard  nofile  131072
+*  soft  nofile  65536
+
+# Limits from furdarius, you can find his optimization gist here at
+# https://gist.github.com/furdarius/94c178d437f56de19a115dc37941d972
