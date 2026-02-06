@@ -110,3 +110,6 @@ alias setpgid="uutils-util-linux setpgid"
 alias setsid="uutils-util-linux setsid"
 alias uuidgen="uutils-util-linux uuidgen"
 
+alias setfacl="uu-setfacl"
+alias getfacl="uu-getfacl"
+alias chacl="uu-chacl"
