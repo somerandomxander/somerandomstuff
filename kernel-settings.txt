@@ -1,4 +1,4 @@
-As of 2/7/2026
+As of 4/2/2026
 
 Kernel base: linux-next
 Compiler: LLVM (LLVM=1)
@@ -15,9 +15,9 @@ Experimental Btrfs features: Enabled
 Kernel crash dumps: Disabled
 hvemmap optimization: Enabled
 
-Kernel patches: ADIOS + BORE + le9uo + POC Selector (firelzrd) / Clear Linux fixes + -O3 + ACS Override (TKG)
+Kernel patches: ADIOS + BORE + le9uo + Kcompressd + re-swappiness + Nap + Reflex + POC Selector (firelzrd) / Clear Linux fixes + -O3 + ACS Override (TKG)
 Kernel scheduler: scx_cake
-Daemons: bpftune + ananicy-cpp (with CachyOS rules) + AdaptiveMM + irqbalance + memavaild + nohang + preload + prelockd + uresourced + cachyos-ksm-settings + profile-sync-daemon
+Daemons: bpftune + ananicy-cpp (with CachyOS rules) + AdaptiveMM + nohang + uresourced + cachyos-ksm-settings + profile-sync-daemon
 TCP congestion control: BBR
-TCP qdisc: cake_mq
-
+TCP qdisc: fq
+Settings: cachyos-settings
