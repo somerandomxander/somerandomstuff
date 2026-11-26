@@ -1,0 +1,12 @@
+GRUB_TIMEOUT=15
+GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
+GRUB_DEFAULT=saved
+GRUB_DISABLE_SUBMENU=true
+GRUB_TERMINAL_OUTPUT="gfxterm"
+GRUB_CMDLINE_LINUX="rhgb quiet nowatchdog nmi_watchdog=0 loglevel=3 systemd.show_status=auto rd.udev.log_level=3 vt.global_cursor_default=0 zswap.enabled=0 libahci.ignore_sss=1 usbcore.autosuspend=-1 page_alloc.shuffle=1 cfg80211.ieee80211_regdom=US iommu=pt tsc=reliable clocksource=tsc pci=pcie_bus_perf"
+GRUB_DISABLE_RECOVERY="true"
+GRUB_ENABLE_BLSCFG=true
+GRUB_GFXMODE=1920x1080,auto
+GRUB_GFXPAYLOAD_LINUX=keep
+GRUB_FONT=/boot/grub2/fonts/unicode.pf2
+GRUB_THEME="/boot/grub2/themes/tela/theme.txt"
