@@ -1,0 +1,19 @@
+{
+  "format": "bbx-theme/2",
+  "name": "Catppuccin Mocha Teal",
+  "seed": {
+    "bg": "#1e1e2e",
+    "primary": "#1e1e2e",
+    "accent": "#94e2d5",
+    "text": "#cdd6f4",
+    "success": "#a6e3a1",
+    "warning": "#f9e2af",
+    "danger": "#f38ba8",
+    "info": "#89b4fa",
+    "radius": 15,
+    "typeScale": 1,
+    "motionScale": 1
+  },
+  "fontId": "sans",
+  "integrity": "528c10b68f5f9d5b2f2ffbe1bfb7ca36f647d573ed4405eb8340a05bc1c28e7e"
+}
