@@ -1,0 +1,1 @@
+**This folder as of me writing this has 1 custom service that automatically vacuums journald, leaving the last 250mb of logs to spare**
