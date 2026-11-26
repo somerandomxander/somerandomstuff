@@ -11,3 +11,7 @@ I main Fedora so I have shortcuts for DNF5-related files and operations.
 cd optimizations taken from `cachyos-fish-config`: https://github.com/CachyOS/cachyos-fish-config/blob/main/cachyos-config.fish
 
 bits and beebs' "Fish Shell Tips & Tricks" blog post, I took a few functions from there: https://beeb.li/blog/fish-shell-tips-and-tricks
+
+# 📁 Other files
+
+`tlrc-config.toml` - my config for [tlrc](https://github.com/tldr-pages/tlrc), a fast tldr client written in Rust
