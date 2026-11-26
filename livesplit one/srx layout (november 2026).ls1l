@@ -1,0 +1,371 @@
+{
+    "components": [
+        {
+            "Title": {
+                "background": {
+                    "Plain": [
+                        0.19215687,
+                        0.19607843,
+                        0.26666668,
+                        1
+                    ]
+                },
+                "text_color": [
+                    0.5803922,
+                    0.8862745,
+                    0.8352941,
+                    1
+                ],
+                "show_game_name": true,
+                "show_category_name": true,
+                "show_finished_runs_count": true,
+                "show_attempt_count": true,
+                "text_alignment": "Left",
+                "display_as_single_line": false,
+                "display_game_icon": true,
+                "show_region": false,
+                "show_platform": false,
+                "show_variables": true
+            }
+        },
+        {
+            "Text": {
+                "background": {
+                    "Plain": [
+                        0.19215687,
+                        0.19607843,
+                        0.26666668,
+                        1
+                    ]
+                },
+                "display_two_rows": false,
+                "left_center_color": null,
+                "right_color": null,
+                "text": {
+                    "Center": "[Insert the World Record here]"
+                }
+            }
+        },
+        {
+            "Splits": {
+                "background": {
+                    "Alternating": [
+                        [
+                            0.09411765,
+                            0.09411765,
+                            0.14509805,
+                            1
+                        ],
+                        [
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ]
+                },
+                "visual_split_count": 8,
+                "split_preview_count": 1,
+                "show_thin_separators": false,
+                "show_gap_separators": false,
+                "always_show_last_split": true,
+                "fill_with_blank_space": true,
+                "display_two_rows": true,
+                "current_split_gradient": {
+                    "Plain": [
+                        0.5803922,
+                        0.8862745,
+                        0.8352941,
+                        0.25
+                    ]
+                },
+                "split_time_accuracy": "Tenths",
+                "segment_time_accuracy": "Tenths",
+                "delta_time_accuracy": "Tenths",
+                "delta_drop_decimals": true,
+                "show_column_labels": false,
+                "subsplit_display_mode": "CurrentGroupExpanded",
+                "columns": [
+                    {
+                        "name": "Time",
+                        "start_with": "ComparisonTime",
+                        "update_with": "SplitTime",
+                        "update_trigger": "Contextual",
+                        "comparison_override": null,
+                        "timing_method": null
+                    },
+                    {
+                        "name": "Seg",
+                        "start_with": "ComparisonSegmentTime",
+                        "update_with": "SegmentTime",
+                        "update_trigger": "Contextual",
+                        "comparison_override": null,
+                        "timing_method": null
+                    },
+                    {
+                        "name": "+/-",
+                        "start_with": "Empty",
+                        "update_with": "DeltaWithFallback",
+                        "update_trigger": "Contextual",
+                        "comparison_override": null,
+                        "timing_method": null
+                    }
+                ]
+            }
+        },
+        {
+            "DetailedTimer": {
+                "background": "Transparent",
+                "comparison1": null,
+                "comparison2": "Best Segments",
+                "hide_second_comparison": false,
+                "timer": {
+                    "background": "Transparent",
+                    "timing_method": null,
+                    "height": 57,
+                    "color_override": [
+                        0.5803922,
+                        0.8862745,
+                        0.8352941,
+                        1
+                    ],
+                    "show_gradient": false,
+                    "digits_format": "SingleDigitSeconds",
+                    "accuracy": "Tenths",
+                    "is_segment_timer": false
+                },
+                "segment_timer": {
+                    "background": "Transparent",
+                    "timing_method": null,
+                    "height": 31,
+                    "color_override": [
+                        0.8039216,
+                        0.8392157,
+                        0.95686275,
+                        1
+                    ],
+                    "show_gradient": false,
+                    "digits_format": "SingleDigitSeconds",
+                    "accuracy": "Tenths",
+                    "is_segment_timer": true
+                },
+                "display_icon": "Hidden",
+                "show_segment_name": false,
+                "segment_name_color": null,
+                "comparison_names_color": [
+                    0.42352942,
+                    0.4392157,
+                    0.5254902,
+                    1
+                ],
+                "comparison_times_color": [
+                    0.9764706,
+                    0.8862745,
+                    0.6862745,
+                    1
+                ],
+                "comparison_times_accuracy": "Hundredths"
+            }
+        },
+        {
+            "PreviousSegment": {
+                "background": {
+                    "Plain": [
+                        0.14436445,
+                        0.2506292,
+                        0.298,
+                        1
+                    ]
+                },
+                "comparison_override": "Best Segments",
+                "display_two_rows": false,
+                "label_color": [
+                    0.45490196,
+                    0.78039217,
+                    0.9254902,
+                    1
+                ],
+                "drop_decimals": false,
+                "accuracy": "Tenths",
+                "show_possible_time_save": false
+            }
+        },
+        {
+            "PossibleTimeSave": {
+                "background": {
+                    "Plain": [
+                        0.24817942,
+                        0.306,
+                        0.24344,
+                        1
+                    ]
+                },
+                "comparison_override": null,
+                "display_two_rows": false,
+                "total_possible_time_save": false,
+                "label_color": [
+                    0.6509804,
+                    0.8901961,
+                    0.6313726,
+                    1
+                ],
+                "value_color": [
+                    0.6509804,
+                    0.8901961,
+                    0.6313726,
+                    1
+                ],
+                "accuracy": "Hundredths"
+            }
+        },
+        {
+            "CurrentPace": {
+                "background": {
+                    "Plain": [
+                        0.298,
+                        0.2704193,
+                        0.20926222,
+                        1
+                    ]
+                },
+                "comparison_override": "Best Segments",
+                "display_two_rows": false,
+                "label_color": [
+                    0.9764706,
+                    0.8862745,
+                    0.6862745,
+                    1
+                ],
+                "value_color": [
+                    0.9764706,
+                    0.8862745,
+                    0.6862745,
+                    1
+                ],
+                "accuracy": "Tenths"
+            }
+        },
+        {
+            "SumOfBest": {
+                "background": {
+                    "Plain": [
+                        0.28251445,
+                        0.22912888,
+                        0.346,
+                        1
+                    ]
+                },
+                "display_two_rows": false,
+                "label_color": [
+                    0.79607844,
+                    0.6509804,
+                    0.96862745,
+                    1
+                ],
+                "value_color": [
+                    0.79607844,
+                    0.6509804,
+                    0.96862745,
+                    1
+                ],
+                "accuracy": "Tenths"
+            }
+        }
+    ],
+    "general": {
+        "direction": "Vertical",
+        "timer_font": {
+            "family": "Arial",
+            "style": "normal",
+            "weight": "extra-black",
+            "stretch": "normal"
+        },
+        "times_font": {
+            "family": "Arial",
+            "style": "normal",
+            "weight": "extra-black",
+            "stretch": "normal"
+        },
+        "text_font": {
+            "family": "Arial",
+            "style": "normal",
+            "weight": "normal",
+            "stretch": "normal"
+        },
+        "text_shadow": null,
+        "background": {
+            "Plain": [
+                0.11764706,
+                0.11764706,
+                0.18039216,
+                1
+            ]
+        },
+        "best_segment_color": [
+            0.9764706,
+            0.8862745,
+            0.6862745,
+            1
+        ],
+        "ahead_gaining_time_color": [
+            0.5803922,
+            0.8862745,
+            0.8352941,
+            1
+        ],
+        "ahead_losing_time_color": [
+            0.6509804,
+            0.8901961,
+            0.6313726,
+            1
+        ],
+        "behind_gaining_time_color": [
+            0.98039216,
+            0.7019608,
+            0.5294118,
+            1
+        ],
+        "behind_losing_time_color": [
+            0.9529412,
+            0.54509807,
+            0.65882355,
+            1
+        ],
+        "not_running_color": [
+            0.8039216,
+            0.8392157,
+            0.95686275,
+            1
+        ],
+        "personal_best_color": [
+            0.5372549,
+            0.7058824,
+            0.98039216,
+            1
+        ],
+        "paused_color": [
+            0.34509805,
+            0.35686275,
+            0.4392157,
+            1
+        ],
+        "thin_separators_color": [
+            1,
+            1,
+            1,
+            0
+        ],
+        "separators_color": [
+            1,
+            1,
+            1,
+            0
+        ],
+        "text_color": [
+            0.8039216,
+            0.8392157,
+            0.95686275,
+            1
+        ]
+    }
+}
