@@ -1,0 +1,11 @@
+[Unit]
+Description=Run journal vacuum every 3 hours
+Requires=journal-vacuum.service
+
+[Timer]
+OnBootSec=15min
+OnUnitActiveSec=3h
+AccuracySec=1m
+
+[Install]
+WantedBy=timers.target
