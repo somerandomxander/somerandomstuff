@@ -1,0 +1,44 @@
+# somerandomxander config file for yazi!
+
+[mgr]
+sort_by = "size"
+sort_dir_first = true
+sort_translit = true
+linemode = "size_and_mtime"
+show_symlink = true
+
+[preview]
+wrap = "yes"
+tab_size = 4
+
+[input]
+cursor_blink = true
+
+[which]
+sort_translit = true
+
+[[plugin.prepend_fetchers]]
+url   = "*"
+run   = "git"
+group = "git"
+
+[[plugin.prepend_fetchers]]
+url   = "*/"
+run   = "git"
+group = "git"
+
+[[plugin.prepend_previewers]]
+url = "*.tar*"
+run = 'piper --format=url -- tar tf "$1"'
+
+[[plugin.prepend_previewers]]
+url = "*.md"
+run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"'
+
+[[plugin.prepend_previewers]]
+url = "*/"
+run = 'piper -- eza -TL=3 --color=always --icons=always --group-directories-first --no-quotes "$1"'
+
+[[plugin.prepend_previewers]]
+mime = "application/sqlite3"
+run  = 'piper -- sqlite3 "$1" ".schema --indent"'
